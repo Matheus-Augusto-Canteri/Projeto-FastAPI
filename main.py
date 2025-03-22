@@ -6,6 +6,6 @@ app = FastAPI()
 
 products = generate_products()
 
-@app.get('/')
+@app.get('/products')
 def get_products():
     return {"products" : products}
