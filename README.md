@@ -24,6 +24,11 @@ uvicorn main:app --reload
 
 A aplicação estará disponível em **http://127.0.0.1:8000**.
 
+### 3️⃣ **Acessar a Documentação**
+
+O FastAPI automaticamente gera a documentação interativa da API utilizando Swagger UI. A documentação estará disponível em **http://127.0.0.1:8000/docs**.
+Além disso, o FastAPI também oferece uma interface alternativa com ReDoc. Para acessá-la, utilize o seguinte link: **http://127.0.0.1:8000/redoc**.
+
 ## 🛠 **Tecnologias Utilizadas**
 
 - **FastAPI**: Framework para construir APIs.
