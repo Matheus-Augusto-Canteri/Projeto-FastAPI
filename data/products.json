@@ -1,0 +1,8 @@
+{
+  "products": [
+    { "name": "Notebook Acer", "price": 3100.0},
+    { "name": "Notebook Dell", "price": 3700.0},
+    { "name": "Notebook Thinkpad", "price": 2500.0},
+    { "name": "Macbook", "price": 10000.0}
+  ]
+}
