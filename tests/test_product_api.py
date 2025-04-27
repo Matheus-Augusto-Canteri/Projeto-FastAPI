@@ -1,7 +1,7 @@
 import requests
 from product import Product
 
-BASE_URL = 'http://localhost:8000' 
+BASE_URL = 'http://127.0.0.1:8000' 
 
 def test_should_get_list_of_products():
     response = requests.get(f'{BASE_URL}/products')
