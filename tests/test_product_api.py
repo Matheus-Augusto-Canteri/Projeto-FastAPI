@@ -1,7 +1,10 @@
 import requests
-from src.product import Product
+import sys
+import os
 
-BASE_URL = 'http://127.0.0.1:8000' 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+BASE_URL = 'http://127.0.0.1:8000'
 
 def test_should_get_list_of_products():
     response = requests.get(f'{BASE_URL}/products')
@@ -14,9 +17,9 @@ def test_should_get_list_of_products():
 def test_should_insert_new_product():
     product = {"name": "Mouse Gamer", "price": 250.0}
     response = requests.post(f'{BASE_URL}/products', json=product)
-    assert response.status_code == 200
+    assert response.status_code == 201  
     data = response.json()
-    assert data["status"] == "inserted"
+    assert data["status"] == "inserted"  
 
 def test_should_have_new_product_after_insert():
     response = requests.get(f'{BASE_URL}/products')
@@ -33,4 +36,4 @@ def test_product_price_should_be_positive():
     response = requests.get(f'{BASE_URL}/products')
     products = response.json()["products"]
     for product in products:
-        assert product["price"] > 0
+        assert product["price"] > 0  
