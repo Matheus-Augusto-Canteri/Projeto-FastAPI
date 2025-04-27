@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 import json
 
-from product import Product
+from src.product import Product
 
 class JsonDB(BaseModel):
     path: str
