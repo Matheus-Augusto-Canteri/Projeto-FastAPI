@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from indb import generate_products
-from json_db import JsonDB
+from data.indb import generate_products
+from data.json_db import JsonDB
 from product import Product
 
 app = FastAPI()
