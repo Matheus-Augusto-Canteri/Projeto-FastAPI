@@ -1,5 +1,5 @@
 import json
-from src.product import Product
+from product import Product
 
 def generate_products():
     f = open('./data/products.json')
