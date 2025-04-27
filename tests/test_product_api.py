@@ -1,5 +1,5 @@
 import requests
-from product import Product
+from src.product import Product
 
 BASE_URL = 'http://127.0.0.1:8000' 
 
